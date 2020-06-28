@@ -1,0 +1,72 @@
+<div class='row'>
+    <div class='offset-md-2 col-md-8'>
+        <div class='card'>
+            <div class='card-header'>
+                <h5>Add Contacts</h5>
+            </div>
+            <div class='card-body'>
+                <form (submit)='onAddContact()' #theForm='ngForm' novalidate>
+                    <div class='form-group row'>
+                        <label for='firstName' class='col-md-2 col-form-label'>First Name: </label>
+                        <div class='col-md-6'>
+                            <input type='text' class='form-control' name='firstName' [(ngModel)]='contactForm.firstName'
+                                #firstName='ngModel' required>
+                        </div>
+                        <div class='col-md-4 col-form-label alert-danger'
+                            *ngIf='firstName.touched && firstName.invalid && firstName.errors.required'>First name is
+                            required</div>
+                    </div>
+                    <div class='form-group row'>
+                        <label for='lastName' class='col-md-2 col-form-label'>Last Name: </label>
+                        <div class='col-md-6'>
+                            <input type='text' class='form-control' name='lastName' [(ngModel)]='contactForm.lastName'
+                                #lastName='ngModel' required>
+                        </div>
+                        <div class='col-md-4 col-form-label alert-danger'
+                            *ngIf='lastName.touched && lastName.invalid && lastName.errors.required'>Last name is
+                            required</div>
+                    </div>
+                    <div class='form-group row'>
+                        <label for='age' class='col-md-2 col-form-label'>Age: </label>
+                        <div class='col-md-6'>
+                            <input type='number' class='form-control' name='age' [(ngModel)]='contactForm.age'
+                                #age='ngModel' required>
+                        </div>
+                        <div class='col-md-4 col-form-label alert-danger'
+                            *ngIf='age.touched && age.invalid && age.errors.required'>Age is required</div>
+                    </div>
+                    <div class='form-group row'>
+                        <label for='address' class='col-md-2 col-form-label'>Address: </label>
+                        <div class='col-md-6'>
+                            <input type='text' class='form-control' name='address' [(ngModel)]='contactForm.address'
+                                #address='ngModel' required>
+                        </div>
+                        <div class='col-md-4 col-form-label alert-danger'
+                            *ngIf='address.touched && address.invalid && address.errors.required'>Address is required
+                        </div>
+                    </div>
+                    <div class='form-group row'>
+                        <label for='interests' class='col-md-2 col-form-label'>Interests: </label>
+                        <div class='col-md-6'>
+                            <input type='text' class='form-control' name='interests' [(ngModel)]='contactForm.interests'
+                                #interests='ngModel' required>
+                        </div>
+                        <div class='col-md-4 col-form-label alert-danger'
+                            *ngIf='interests.touched && interests.invalid && interests.errors.required'>Interests are
+                            required</div>
+                    </div>
+                    <input type='submit' class='btn btn-success col-md-3 offset-md-3' value='Add Contact'
+                        [disabled]='theForm.invalid'>
+                    <div class='mt-4'>
+                        <div class='alert alert-success text-center' role='alert' *ngIf='success && message && message.length'>
+                            {{message}}
+                        </div>
+                        <div class='alert alert-danger text-center' role='alert' *ngIf='!success && message && message.length'>
+                            {{message}}
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

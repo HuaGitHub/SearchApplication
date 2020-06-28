@@ -1,0 +1,75 @@
+[
+  {
+    "FirstName": "Sidney",
+    "LastName": "Crosby",
+    "Address": "1400 Main Street, Pittsburgh PA",
+    "Age": 31,
+    "Interests": "Ice Hockey, Golf",
+    "PictureName": "/img/S.jpg"
+  },
+  {
+    "FirstName": "Evgeni",
+    "LastName": "Malkin",
+    "Address": "15 Charles Street, Pittsburgh PA",
+    "Age": 33,
+    "Interests": "Basketball, Tennis",
+    "PictureName": "/img/E.jpg"
+  },
+  {
+    "FirstName": "Phil",
+    "LastName": "Kessel",
+    "Address": "15 Arizona Street, Phoneix AZ",
+    "Age": 32,
+    "Interests": "Eat hot dogs, Chill",
+    "PictureName": "/img/P.jpg"
+  },
+  {
+    "FirstName": "Eric",
+    "LastName": "Kessel",
+    "Address": "22 Arizona Street, Phoneix AZ",
+    "Age": 33,
+    "Interests": "Eat popcorn, swim",
+    "PictureName": "/img/E.jpg"
+  },
+  {
+    "FirstName": "Tom",
+    "LastName": "Cruz",
+    "Address": "1300 Middle Street, Pittsburgh PA",
+    "Age": 35,
+    "Interests": "Acting",
+    "PictureName": "/img/T.jpg"
+  },
+  {
+    "FirstName": "Amy",
+    "LastName": "Kessel",
+    "Address": "15 Arizona Street, Phoneix AZ",
+    "Age": 32,
+    "Interests": "Eat hot dogs, Chill",
+    "PictureName": "/img/A.jpg"
+  },
+  {
+    "FirstName": "Kim",
+    "LastName": "Kessel",
+    "Address": "15 Arizona Street, Phoneix AZ",
+    "Age": 32,
+    "Interests": "Eat hot dogs, Chill",
+    "PictureName": "/img/K.jpg"
+  },
+  {
+    "FirstName": "Sid",
+    "LastName": "Crosby",
+    "Address": "1400 Main Street, Pittsburgh PA",
+    "Age": 31,
+    "Interests": "Ice Hockey, Golf",
+    "PictureName": "/img/S.jpg"
+  },
+  {
+    "FirstName": "Sam",
+    "LastName": "Crosby",
+    "Address": "1400 Main Street, Pittsburgh PA",
+    "Age": 31,
+    "Interests": "Ice Hockey, Golf",
+    "PictureName": "/img/S.jpg"
+  }
+
+]

@@ -1,0 +1,39 @@
+<div class='container'>
+  <div class='row'>
+    <form class='form-inline' (submit)='onSearch()' #theForm='ngForm'>
+      <div class='form-group'>
+        <div class='col-md-2'>
+          <label name='nameStr'>Name:</label>
+        </div>
+        <div class='col-md-8'>
+          <input type='text' class='form-control' name='nameStr' [(ngModel)]='nameStr' required />
+        </div>
+        <div class='col-md-2'>
+          <input type='submit' class='btn btn-primary' value='Search' />
+        </div>
+      </div>
+    </form>
+  </div>
+  <hr />
+  <div class='mb-4'>
+    <div *ngIf='contactList && contactList.length'><b>Contacts found</b>: {{contactList.length}}</div>
+    <div class='alert alert-danger' role='alert' *ngIf='contactList && contactList.length == 0'>No contact found</div>
+  </div>
+  <div class='row'>
+    <div class='col-md-4' *ngFor='let contact of contactList'>
+      <div class='card mb-4'>
+        <div class='card-body'>
+          <img src='{{contact.pictureName}}' alt='{{contact.firstName}} {{contact.lastName}}'
+            class='img-thumbnail mb-2'>
+          <p><b>Name: </b>{{contact.firstName}} {{contact.lastName}}</p>
+          <p><b>Age: </b>{{contact.age}}</p>
+          <p><b>Address: </b>{{contact.address}}</p>
+          <p><b>Interests: </b>{{contact.interests}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">
+  <p style="color: white">Please Wait...</p>
+</ngx-spinner>
